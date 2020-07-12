@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/estilocontacto.css">
+        <link rel="stylesheet" type="text/css" href="css/Semantic-UI-CSS-master/semantic.min.css">
+        <script type="text/javascript" src="css/Semantic-UI-CSS-master/semantic.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i>Inicio</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i>Usuario</a></li>
+                    <li><a href="Contacts.html"><i class="fas fa-address-card"></i>Contactos</a></li>
+                    <li><a href="NuevoContacto.html"><i class="fas fa-user-plus"></i>NuevoContacto</a></li>
+                    <li><a href="#"><i class="fas fa-blog"></i>Pagina</a></li>
+                    <li><a href="#"><i class="fas fa-address-book"></i>Ayuda</a></li>
+                    <li><a href="#"><i class="fas fa-cogs"></i>Configuracion</a></li>
+                    <li><a href="Login.html"><i class="fas fa-sign-out-alt"></i>Cerrar Sesion</a></li>
+                </ul>
+            </div>
+            <div class="main_content">
+                <div class="userprofile">
+                    <img src="img/portada.jpg" class="fondoimg">
+                    <div class="perfil">
+                        <img src="img/profile1.jpg" class="ui medium rounded image">
+                        <h1>Nombre de Usuario</h1>
+                    </div>  
+                </div>
+                <div class="datos">
+                    <form class="ui form">
+                        <h4 class="ui dividing header">Informacion Personal</h4>
+                        <div class="field">
+                          <label>Name</label>
+                          <div class="two fields">
+                            <div class="field">
+                              <input type="text" name="shipping[first-name]" value="">
+                            </div>
+                            <div class="field">
+                              <input type="text" name="shipping[last-name]" value="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <label>Direccion</label>
+                          <div class="fields">
+                            <div class="twelve wide field">
+                              <input type="text" name="shipping[address]" value="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="field">
+                            <label>Correo</label>
+                            <div class="fields">
+                              <div class="twelve wide field">
+                                <input type="text" name="shipping[address]" value="">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <div class="ui left icon input">
+                              <input type="password" value="">
+                              <i class="lock icon"></i>
+                            </div>
+                        </div>
+                        <div class="two fields">
+                          <div class="field">
+                            <label>Departamento</label>
+                            <select class="ui fluid dropdown">
+                            <option value="">Elija una opcion</option>
+                            <option value="AV">Alta Verapaz</option>
+                            <option value="BJ">Baja Verapaz</option>
+                            <option value="Ch">Chimaltenango</option>
+                            <option value="CL">Chiquimula</option>
+                            <option value="PT">Peten</option>
+                            <option value="EP">El Progreso</option>
+                            <option value="QC">Quiche</option>
+                            <option value="ES">Escuintla</option>
+                            <option value="GT">Guatemala</option>
+                            <option value="HH">Huehuetenango</option>
+                            <option value="IZ">Izabal</option>
+                            <option value="JL">Jalapa</option>
+                            <option value="JT">Jutiapa</option>
+                            <option value="QT">Quetzaltenango</option>
+                            <option value="RT">Retalhuleu</option>
+                            <option value="SC">Sacatepequez</option>
+                            <option value="SM">San Marcos</option>
+                            <option value="SL">Solola</option>
+                            <option value="SR">Santa Rosa</option>
+                            <option value="ST">Suchitepequez</option>
+                            <option value="TT">Totonicapan</option>
+                            <option value="ZA">Zacapa</option>
+                            </select>
+                          </div>
+                          <div class="field">
+                            <label>Pais</label>
+                            <div class="ui fluid search selection dropdown">
+                              <input type="hidden" name="country" value="">
+                              <i class="dropdown icon"></i>
+                              <div class="default text">Guatemala</div>
+                          
+                            </div>
+                          </div>
+                        </div>
+                        <h4 class="ui dividing header">Numero de Telefono y fecha de Nacimiento</h4>
+                        <div class="fields">
+                          <div class="seven wide field">
+                            <label>Numero de Telefono</label>
+                            <input type="text" name="card[number]" maxlength="16" placeholder="Numero de Telefono" value="">
+                          </div>
+                          <div class="three wide field">
+                            <label>Dia</label>
+                            <input type="text" name="card[cvc]" maxlength="3" placeholder="Dia" value="">
+                          </div>
+                          <div class="six wide field">
+                            <label>Mes</label>
+                            <div class="two fields">
+                              <div class="field">
+                                <select class="ui fluid search dropdown" name="card[expire-month]">
+                                  <option value="">Mes</option>
+                                  <option value="1">Enero</option>
+                                  <option value="2">Febrero</option>
+                                  <option value="3">Marzo</option>
+                                  <option value="4">Abril</option>
+                                  <option value="5">Mayo</option>
+                                  <option value="6">Junio</option>
+                                  <option value="7">Julio</option>
+                                  <option value="8">Agosto</option>
+                                  <option value="9">Septiembre</option>
+                                  <option value="10">Octubre</option>
+                                  <option value="11">Noviembre</option>
+                                  <option value="12">Deciembre</option>
+                                </select>
+                              </div>
+                              <div class="field">
+                                <input type="text" name="card[expire-year]" maxlength="4" placeholder="Year" value="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+</html>
